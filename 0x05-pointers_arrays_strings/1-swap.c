@@ -33,16 +33,26 @@ int main() {
     int a = 98;
     int b = 42;
 
+    putchar('a');
+    putchar('=');
     printInteger(a);
+    putchar(',');
     putchar(' '); // Print a space for separation
+    putchar('b');
+    putchar('=');
     printInteger(b);
     putchar('\n');
 
     // Call the swapIntegers function to swap the values
     swap_int(&a, &b);
-
+    
+     putchar('a');
+    putchar('=');
     printInteger(a);
+    putchar(',');
     putchar(' '); // Print a space for separation
+    putchar('b');
+    putchar('=');
     printInteger(b);
     putchar('\n');
 
