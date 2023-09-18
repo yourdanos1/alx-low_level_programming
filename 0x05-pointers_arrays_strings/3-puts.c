@@ -1,26 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main prints a string, followed by a new line
+ * _puts - prints a string followed by a new line..
  *
- * return 0
+ *@str: the string to print.
  *
  */
 
-void _puts( char *str) {
-    while (*str != '\0') {
-        putchar(*str);
-        str++;
-    }
-    putchar('\n');
+void _puts(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
 
-int main() {
-    char *n= "I do not fear computers. I fear the lack of them - Isaac Asimov";
-
-    // Call the function to print the string with a new line using putchar
-    _puts(n);
-
-    return 0;
-}
