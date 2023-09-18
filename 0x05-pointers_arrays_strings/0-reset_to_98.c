@@ -13,8 +13,8 @@ void reset_to_98(int *n)
 int main (void) 
 {
   int p=402;  
-  printf("n=%d\n", p);
+  printf("'n'=%d\n ", p);
   reset_to_98(&p);
-  printf("n=%d\n", p);
+  printf("'n'=%d\n ", p);
   return (0);
 }
