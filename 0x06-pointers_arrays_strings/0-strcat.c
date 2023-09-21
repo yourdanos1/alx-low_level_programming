@@ -1,20 +1,23 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
 
-char *_strcat(char *dest, char *src)
-{
-    /* Find the end of the destination string*/
-    char *ptr = dest + strlen(dest);
+char *_strcat(char *dest, char *src) {
+    char *originalDest = dest; 
     
-     /*Copy the source string to the end of the destination*/
-    while (*src != '\0') {
-        *ptr++ = *src++;
+    /*Move the dest pointer to the end of the destination string*/
+    while (*dest != '\0') {
+        dest++;
     }
     
-    /* Null-terminate the concatenated string*/
-    *ptr = '\0';
-
-    return dest;
+    
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    
+    /*Null-terminate the concatenated string*/
+    *dest = '\0';
+    
+    return originalDest; /* Return a pointer to the start of the concatenated string*/
 }
