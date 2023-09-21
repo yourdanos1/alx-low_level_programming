@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *_stract(char *dest, char  *src) {
+char *_strcat(char *dest, char *src)
+{
     /* Find the end of the destination string*/
     char *ptr = dest + strlen(dest);
     
