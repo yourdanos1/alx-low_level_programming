@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * reserve-array - a function that reserves the content of an array of integeres
+ * @n: is a pointer t a string that you want to reserve
+ * return :n.
+ */
 
 void reverse_array(int *a, int n) {
     int start = 0;
