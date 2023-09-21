@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+/*it concatenates two strings, move the first varaible to the end of the dest string and then add up the new string*/
 
 char *_strcat(char *dest, char *src) {
     char *originalDest = dest; 
