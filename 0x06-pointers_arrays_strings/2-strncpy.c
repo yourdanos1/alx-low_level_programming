@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * * _strcpy copies a string
+ *
+ * return ptr
+ */
 
 char *_strncpy(char *dest,  char *src, int n) {
     char *ptr = dest;

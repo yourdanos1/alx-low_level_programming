@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-/*it concatenates two strings, move the first varaible to the end of the dest string and then add up the new string*/
+/**
+ * * _strcat concatenates two strings
+ *
+ * return a pointer to a result dest
+ */
 
 char *_strcat(char *dest, char *src) {
     char *originalDest = dest; 

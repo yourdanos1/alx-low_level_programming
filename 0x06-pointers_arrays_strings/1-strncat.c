@@ -1,5 +1,9 @@
 #include <stdio.h>
-/*like the concatenate function but this  will use at most n bytes from src*/
+/**
+ * * _strncat concatenates two strings using at most n bytes from src
+ *
+ * return a pointer to the result dest
+ */
 
 char *_strncat(char *dest, char *src, int n) {
     char *originalDest = dest; /* Store the original pointer to dest */
