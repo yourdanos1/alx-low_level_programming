@@ -1,4 +1,4 @@
-#include "mIN.H"
+#include "main.h"
 /**
  * x raised to the power of y
  *
