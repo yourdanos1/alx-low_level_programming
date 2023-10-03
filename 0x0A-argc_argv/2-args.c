@@ -1,7 +1,10 @@
 #include <stdio.h>
 /**
- * prints allcommand line argument
+ * main - print the command line arguments
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
