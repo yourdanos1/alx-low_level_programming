@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * multiplies two strings 
+ * multiplies two strings
  *
  */
 
@@ -9,7 +9,7 @@ int stringToInteger(const char *str)
 {
 int result = 0;
 int sign = 1;
-int i =0;
+int i = 0;
 if (str[0] == '-')
 {
 sign = -1;
@@ -26,7 +26,7 @@ else
 return (0);
 }
 }
-return (result * sign);
+return (result *sign);
 }
 int main(int argc, char *argv[])
 {
@@ -40,7 +40,7 @@ return (1);
 }
 num1 = stringToInteger(argv[1]);
 num2 = stringToInteger(argv[2]);
-result = num1 * num2;
+result = num1 *num2;
 printf("%d\n", result);
 return (0);
 }
