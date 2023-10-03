@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
- * multiplies two strings
+ * main - prints multiplied arguments
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
+ * Returns: error when there is no two arguments
  */
 
 int stringToInteger(const char *str)
