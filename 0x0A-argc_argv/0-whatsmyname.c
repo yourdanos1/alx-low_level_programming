@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * prints its name
+ * main - print the command line argument
+ * @argc: number of arguments 
+ * @argv: array of arguments
  *
  */
 
