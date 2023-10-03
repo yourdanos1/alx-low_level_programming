@@ -5,7 +5,7 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Returns: error when there is no two arguments
+ * Returns: Always 0 (Success)
  */
 
 int stringToInteger(const char *str)
