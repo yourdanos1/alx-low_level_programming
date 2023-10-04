@@ -34,7 +34,7 @@ result[i] = s1[i];
 }
 for (i = 0; i < len2; i++)
 {
-result[len1 + 1] = s2[i];
+result[len1 + i] = s2[i];
 }
 }
 return (result);
