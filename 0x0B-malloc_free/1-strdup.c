@@ -7,7 +7,7 @@
  * *_strdup - printes copied string
  * @*str: holding a character
  *
- * Return: copied string
+ * Return: on Success 1
  */
 
 char *_strdup(char *str)
