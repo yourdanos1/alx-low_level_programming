@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+
+struct dog {
+    char *name;
+    float age;
+    char *owner;
+};
+
+void init_dog(struct dog *d, char *name, float age, char *owner) {
+    // Allocate memory for the name and owner strings
+    d->name = malloc(strlen(name) + 1);
+    d->owner = malloc(strlen(owner) + 1);
+    
+    // Check if memory allocation was successful
+    if (d->name == NULL || d->owner == NULL) {
+        // Handle memory allocation error here
+        // For example, you could print an error message and exit
+        fprintf(stderr, "Memory allocation error\n");
+        exit(1); // Exit the program with an error code
+    }
+    
+    // Copy the provided values into the struct's elements
+    strcpy(d->name, name);
+    d->age = age;
+    strcpy(d->owner, owner);
+}
