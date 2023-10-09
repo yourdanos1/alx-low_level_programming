@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * init_dog - struct 
+ * init_dog - struct
  * @*d: first member
  * @*name: second member
  * @age: third member
