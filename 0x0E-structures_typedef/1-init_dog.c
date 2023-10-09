@@ -3,6 +3,16 @@
 #include "dog.h"
 #include <string.h>
 
+/**
+ * init_dog - struct 
+ * @*d: first member
+ * @*name: second member
+ * @age: third member
+ * @*owner: fourth member
+ *
+ * description: struct that initalize varible of type struct_dog
+ */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 d->name = malloc(strlen(name) + 1);
