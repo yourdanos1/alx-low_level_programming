@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
-#include <string.h>
 
 /**
  * init_dog - struct
@@ -14,15 +12,32 @@
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
+{   
+if (name != NULL)
 {
-d->name = malloc(strlen(name) + 1);
-d->owner = malloc(strlen(owner) + 1);
-if (d->name == NULL || d->owner == NULL)
+int i;
+for (i = 0; name[i] != '\0' && i < (int)sizeof(d->name) - 1; i++)
 {
-fprintf(stderr, "Memory allocation error\n");
-exit(1);
+d->name[i] = name[i];
 }
-strcpy(d->name, name);
+d->name[i] = '\0'; 
+}
+else
+{
+printf("Name: NULL\n");
+}
+if (owner != NULL)
+{
+int i;
+for (i = 0; owner[i] != '\0' && i < (int)sizeof(d->owner) - 1; i++)
+{
+d->owner[i] = owner[i];
+}
+d->owner[i] = '\0';
+}
+else
+{
+printf("Owner: NULL\n");
+}
 d->age = age;
-strcpy(d->owner, owner);
 }
