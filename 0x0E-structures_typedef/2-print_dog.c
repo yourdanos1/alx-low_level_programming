@@ -3,9 +3,9 @@
 
 /*
  * print_dog - function that prints a struct dog
- * @*d: holding pointer
+ * @d: holding pointer
  *
- * return printed elemnts from struct
+ * Return printed elemnts from struct
  */
 
 void print_dog(struct dog *d)
