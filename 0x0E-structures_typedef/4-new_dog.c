@@ -3,15 +3,15 @@
 #include <stdlib.h>
 
 /**
- * *new_dog - function that createsa new dog
- * @*name: holding character
+ * new_dog - function that createsa new dog
+ * @name: holding character
  * @age: holding float
- * @*owner: holding charcter
+ * @owner: holding charcter
  *
- * RETURN: NULL id function fails 1 (Success)
+ * Return: pointer to the newly created dog structer
  */
 
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)/*function*/
 {
 int name_length;
 int owner_length;
