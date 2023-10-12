@@ -1,13 +1,15 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
-/*
- * print_numbers - print numbers
+
+/**
+ * print_numbers - print the arguments
  * @separator: holding character
  * @n: holding integer
  *
  * Return: printed value
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
