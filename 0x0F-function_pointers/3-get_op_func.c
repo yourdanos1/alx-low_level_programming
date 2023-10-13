@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * get_op_func - Selects the correct function to perform the operation.
- * @s: The operator passed as an argument to the program
- * Return: A pointer to the function that corresponds to the operator.
+ * op_mod - operates eminder.
+ * @a: holding integer
+ * @b: holding integer
+ *
+ * Return: value of a reminder b
  */
 int op_mod(int a, int b)
 {
@@ -18,13 +20,17 @@ putchar('r');
 putchar('\n');
 exit(100);
 }
-return a % b;
+return (a % b);
 }
+/**
+ * get_op_func - Selects the correct function to perform the operation.
+ * @s: The operator passed as an argument to the program
+ * Return: A pointer to the function that corresponds to the operator.
+ */
 int (*get_op_func(char *s))(int, int)
 {
 int i;
-op_t ops[] =
-{
+op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
 {"*", op_mul},
